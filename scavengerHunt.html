@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Scavenger Hunt</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<h1>CSS Scavenger Hunt</h1>
+				<p class="subtitle">Edit styles to reveal hidden clues, then submit the answers.</p>
+			</header>
+
+			<main>
+				<div class="directions">
+					<strong>Goal:</strong> Reveal five hidden clue words by editing CSS in DevTools.
+					<p class="hint">
+						Try changing <code>display</code>, <code>color</code>, <code>opacity</code>,
+						<code>position</code>, and <code>font-size</code>.
+					</p>
+				</div>
+
+				<section class="clue-board" aria-label="Clue area">
+					<h2>Hidden Clues</h2>
+					<p>Each clue is hidden with a different CSS trick:</p>
+
+					<div class="hidden-zone">
+						<p id="clue1">Clue 1 word: ALGORITHM</p>
+						<p id="clue2">Clue 2 word: FUNCTION</p>
+						<p id="clue3">Clue 3 word: DEBUG</p>
+						<p id="clue4">Clue 4 word: LOOP</p>
+						<p id="clue5">Clue 5 word: VARIABLE</p>
+					</div>
+				</section>
+
+				<section class="answer-area" aria-label="Answer checker">
+					<h2>Your Answers</h2>
+					<div class="grid">
+						<div>
+							<label for="a1">Clue 1</label>
+							<input id="a1" type="text" />
+						</div>
+						<div>
+							<label for="a2">Clue 2</label>
+							<input id="a2" type="text" />
+						</div>
+						<div>
+							<label for="a3">Clue 3</label>
+							<input id="a3" type="text" />
+						</div>
+						<div>
+							<label for="a4">Clue 4</label>
+							<input id="a4" type="text" />
+						</div>
+						<div>
+							<label for="a5">Clue 5</label>
+							<input id="a5" type="text" />
+						</div>
+					</div>
+					<button id="check" type="button">Check Answers</button>
+					<p id="result" aria-live="polite"></p>
+				</section>
+			</main>
+
+			<footer>
+				Hunter tip: Make sure to use the inspect tool
+			</footer>
+		</div>
+
+		<script src="scavengerHunt.js"></script>
+	</body>
+</html>
